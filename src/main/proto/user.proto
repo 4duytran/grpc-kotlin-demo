@@ -17,3 +17,7 @@ message UserResponse{
 service UserInfo{
   rpc getUserInfo(UserRequest) returns (UserResponse);
 }
+
+service UserInfoServerStream{
+  rpc getUserInfoServerStream(UserRequest) returns (stream UserResponse);
+}

@@ -16,9 +16,9 @@ repositories {
 
 dependencies {
     implementation("io.grpc:grpc-kotlin-stub:1.3.0")
-    implementation("io.grpc:grpc-protobuf:1.49.0")
-    implementation("com.google.protobuf:protobuf-kotlin:3.21.5")
-    runtimeOnly("io.grpc:grpc-netty:1.49.0")
+    implementation("io.grpc:grpc-protobuf:1.49.1")
+    implementation("com.google.protobuf:protobuf-kotlin:3.21.6")
+    runtimeOnly("io.grpc:grpc-netty:1.49.1")
     testImplementation(kotlin("test"))
 }
 
@@ -60,7 +60,7 @@ protobuf {
         all().forEach {
             it.plugins {
                 id("grpc")
-                id("grpckt")
+                /*id("grpckt")*/
             }
             it.builtins {
                 id("kotlin")

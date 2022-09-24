@@ -12,4 +12,5 @@ class UserServerImpl: UserInfoGrpc.UserInfoImplBase() {
             .build())
         responseObserver.onCompleted()
     }
+
 }
